@@ -2,14 +2,14 @@
 
 namespace Libs;
 
-class GetGlobalParams {
+class InputFilter {
 
     private static $instance = null;
     protected $_globVars = [];
 
     public static function getLib() {
         if (is_null(self::$instance)) {
-            self::$instance = new GetGlobalParams();
+            self::$instance = new InputFilter();
         }
         return self::$instance;
     }

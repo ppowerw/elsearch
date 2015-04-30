@@ -4,15 +4,16 @@ namespace conf;
 
 class Config {
 
-//App config    
-    protected $App = [
+    //App config    
+    protected static $App = [
         'hostname' => 'elsearch.local',
         'port' => '8090',
         'siteName' => 'Elsearch',
         'debug' => 1
     ];
-//DB config
-    protected $DB = [
+    
+    //DB config
+    protected static $DB = [
         //'dbType' => 'MySQL',
         'dbHost' => 'localhost',
         'dbUser' => '',
@@ -21,13 +22,18 @@ class Config {
         'dbPort' => '3306'
     ];
 
-    public function getconfig($configName) {
-        if ($this->$configName) {
-            return $this->$configName;
+    public static function getAppConfig($value) {
+        if (self::$App[$value]) {
+            return self::$App[$value];
         }
-        echo 'Undefined ConfigName';
-        ob_flush();
-        return 0;
+        return null;
+    }
+    
+    public static function getDBConfig($value) {
+        if (self::$DB[$value]) {
+            return self::$DB[$value];
+        }
+        return null;
     }
 
 }

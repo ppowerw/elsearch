@@ -9,7 +9,7 @@ class Application {
     private $appController;
 
     public function initApplication(){
-        $this->routeData = \Core\Route::getInstance()->getRoute();
+        $this->routeData = \Core\Router::getInstance()->getRoute();
 
         xdebug_var_dump($this->routeData);
         
@@ -20,7 +20,25 @@ class Application {
     private function getController($controllerLabel){
         $controllerPath = '\Controllers\\'. $controllerLabel;
         $this->appController = new $controllerPath;
-        $this->appController->initController($this->routeData);
+        $this->appController->initController($this->routeData);        
+        
+        $dataArr = [
+            'Array for test Logger',
+            'user'=>'test@example.com',
+            'order'=>[
+                'items' =>[
+                    "m15671",
+                    "m2437822",
+                    "m362353"
+                    ],
+                'cost' => '233.3'
+                ],
+            $this->appController
+            ];
+        \Libs\Logger::doLog()->toScreen($dataArr);
+        print_r ($dataArr);
+        //\Libs\Logger::doLog()->toFile($dataArr);
+        
         return 0;       
     }
 }

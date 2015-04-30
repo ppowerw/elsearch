@@ -1,0 +1,22 @@
+2015-04-30 12:49:38 - ))(( Logging array: [0]test log with array[1]1[2]2[3]3[4]4[5]5))(( Logging array: [0]m11[1]m22[2]m332015-04-30 12:50:07 - )])(( Logging array: [0]test log with array[1]1[2]2[3]3[4]4[5]5)])(( Logging array: [0]m11[1]m22[2]m332015-04-30 12:50:19 - (( Logging array: [0]test log with array[1]1[2]2[3]3[4]4[5]5(( Logging array: [0]m11[1]m22[2]m33))))2015-04-30 12:51:34 - (( Logging array: [0]test log with array[1]1[2]2[3]3[4]4[5]5(( Logging array: [0]m11[1]m22[2]m33))))2015-04-30 12:51:34 - test log with array2015-04-30 12:51:47 - (( Logging array: [0]test log with array[1]1[2]2[3]3[4]4[5]5(( Logging array: [0]m11[1]m22[2]m33))))2015-04-30 12:51:47 - test log string2015-04-30 12:52:42 - (( Logging array: [0]test log with array[1]1[2]2[3]3[4]4[5]5(( Logging array: [0]m11[1]m22[2]m33))))
+2015-04-30 12:52:42 - test log string
+2015-04-30 12:53:13 - (( Logging array: [0]test log with array[1]1[2]2[3]3[4]4[5]5(( Logging array: [0]m11[1]m22[2]m33))))
+2015-04-30 12:53:13 - test log string
+2015-04-30 12:54:07 - (( Logging array: [0]test log with array[1]1[2]2[3]3[4]4[5]5(( Logging array: [0]m11[1]m22[2]m33))))
+2015-04-30 12:54:07 - test log string
+2015-04-30 12:57:52 - (( Logging array: [0]test log with array[1]1[2]2[3]3[4]4[5]51))
+2015-04-30 12:57:52 - test log string
+2015-04-30 12:58:53 -  Array: [0]test log with array[1]1[2]2[3]3[4]4[5]51
+2015-04-30 12:58:53 - test log string
+2015-04-30 12:59:02 -  Array: [0]test log with array[1]1[2]2[3]3[4]4[5]5 Array: [0]m11[1]m22[2]m33
+2015-04-30 12:59:02 - test log string
+2015-04-30 13:00:18 -  Array: [[0]: test log with array][[1]: 1][[2]: 2][[3]: 3][[4]: 4][[5]: 5] Array: [[0]: m11][[1]: m22][[2]: m33]
+2015-04-30 13:00:18 - test log string
+2015-04-30 13:00:42 - | Array: [[0]: test log with array][[1]: 1][[2]: 2][[3]: 3][[4]: 4][[5]: 5]| Array: [[0]: m11][[1]: m22][[2]: m33]||
+2015-04-30 13:00:42 - test log string
+2015-04-30 13:01:23 - | Array: [0: test log with array][1: 1][2: 2][3: 3][4: 4][5: 5]| Array: [0: m11][1: m22][2: m33]||
+2015-04-30 13:01:23 - test log string
+2015-04-30 13:17:22 - | Array: [0: test log with array][1: 1][2: 2][3: 3][4: 4][5: 5]| Array: [0: m11][1: m22][2: m33]||
+2015-04-30 13:17:22 - test log string
+2015-04-30 13:50:37 - | Array: [0: test log with array][1: 1][2: 2][3: 3][4: 4][5: 5]| Array: [0: m11][1: m22][2: m33]||
+2015-04-30 13:50:37 - test log string

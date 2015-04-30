@@ -16,13 +16,11 @@ class Frontend{
     ];
     
     public function initController($routeData){
-        echo PHP_EOL. "<br/> Init controller >> " . __CLASS__;
+        \Libs\Logger::doLog()->toScreen("Init controller >> " . __CLASS__ );
         
         $this->routeData = $routeData;
-        $this->checkAction($this->routeData['action']);
-        
-        echo PHP_EOL. "<br/> Set action >> " . $this->routeData['action'];
-        
+        $this->checkAction($this->routeData['action']);       
+        \Libs\Logger::doLog()->toScreen("Set action >> ".$this->routeData['action']);       
         $this->doAction($this->routeData['action']);        
         return 0;
     }
@@ -41,9 +39,9 @@ class Frontend{
     private function doAction($action){
         $needleFunction = 'doAction'.$action;
         if (!method_exists($this,$needleFunction)){
-            echo PHP_EOL. '<br/> For action "'.$action.'" function $needleFunction doesn\'t exist';
+            \Libs\Logger::doLog()->toScreen('For action "'.$action.'" function $needleFunction doesn\'t exist');
         }else{
-            echo PHP_EOL. '<br/> For action "'.$action.'" function $needleFunction exists';
+            \Libs\Logger::doLog()->toScreen('For action "'.$action.'" function $needleFunction exists');
             $this->$needleFunction();
         }
     }
@@ -62,4 +60,3 @@ class Frontend{
     }
     
 }
-

@@ -6,7 +6,7 @@ namespace Core;
  *  Class for parsing data in request
  */
 
-class Route {
+class Router {
 
     private static $instance = null;
     private $requestURI;
@@ -17,7 +17,7 @@ class Route {
 
     public static function getInstance() {
         if (is_null(self::$instance)) {
-            self::$instance = new Route();
+            self::$instance = new Router();
         }
         return self::$instance;
     }
@@ -39,7 +39,7 @@ class Route {
     }
 
     private function parseRequest() {
-        $this->requestURI = \Libs\GetGlobalParams::getLib()->getGlobal('REQUEST_URI', 'SERVER');
+        $this->requestURI = \Libs\InputFilter::getLib()->getGlobal('REQUEST_URI', 'SERVER');
     }
 
     private function getLabelController() {
